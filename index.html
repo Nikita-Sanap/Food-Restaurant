@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food ordering website</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- <i class="fa fa-trash"></i> -->
+
+    <!-- DESKTOP VIEW -->
+    <div id="container" class="container">
+
+        <div id="menu">
+            <div class="brandLogo">
+                <img src="./images/final_ brand_logo.jpg" alt="">
+            </div>
+            <div class=" MenuItem">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Orders</a>
+                <a href="#">WishList</a>
+                <a href="#">Address</a>
+                <a href="#">Help</a>
+            </div>
+
+        </div>
+
+        <div id="food-container">
+            <div id="header">
+                <div class="add-box">
+                    <i class="fa fa-map-marker your-address" id="add-address">Your address</i>
+                </div>
+                <div class="util">
+                    <i class="fa fa-search">Search</i>
+                    <i class="fa fa-tags">Offers</i>
+                    <i class="fa fa-cart-plus" id="cart-plus"> 0  Item</i>
+                </div>
+            </div>
+
+            <div id="foodItems" >
+
+                <div id="biryani">
+                    <p id="CategoryName">Biryani Corner</p>
+
+                    <!-- <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.3</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/Biryani/sindhi biryani.jpg" alt="">
+                        <p id="ItemName">Sindhi-Biryani</p>
+                        <p id="ItemPrice">Rs.300</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/Biryani/chicken B2.jpg" alt="">
+                        <p id="ItemName">Chicken-Biryani</p>
+                        <p id="ItemPrice">Rs.250</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">$4.5</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/Biryani/hyderabad biryani.jpg" alt="">
+                        <p id="ItemName">Hyderabad-Biryani</p>
+                        <p id="ItemPrice">Rs.350</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/Biryani/tandoori biryani.jpg" alt="">
+                        <p id="ItemName">Tandoori-Biryani</p>
+                        <p id="ItemPrice">Rs.230</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/Biryani/veg biryani.jpg" alt="">
+                        <p id="ItemName">Veg-Biryani</p>
+                        <p id="ItemPrice">Rs.180</p>
+                    </div> -->
+                </div>
+
+                <div id="paneer">
+                    <p id="CategoryName">tasty paneer</p>
+                    <!-- <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer kofta.jpg" alt="">
+                        <p id="ItemName">Paneer kofta</p>
+                        <p id="ItemPrice">Rs.250</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/kadai paneer.jpg" alt="">
+                        <p id="ItemName">Kadai paneer</p>
+                        <p id="ItemPrice">Rs.180</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer tikka.jpg" alt="">
+                        <p id="ItemName">Paneer tikka</p>
+                        <p id="ItemPrice">Rs.200</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.4</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/panjabi paneer.jpg" alt="">
+                        <p id="ItemName">Panjabi paneer</p>
+                        <p id="ItemPrice">Rs.230</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/simple P2.jpg" alt="">
+                        <p id="ItemName">Simple paneer</p>
+                        <p id="ItemPrice">Rs.150</p>
+                    </div> -->
+                </div>
+
+
+                <div id="maharashtrian">
+                    <p id="CategoryName">Maharashtrian-dish</p>
+
+                    <!-- <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/maharashtrian-dishes/misal-pav.jpg" alt="">
+                        <p id="ItemName">misal-pav</p>
+                        <p id="ItemPrice">Rs.80</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/maharashtrian-dishes/paratha.jpg" alt="">
+                        <p id="ItemName">paratha</p>
+                        <p id="ItemPrice">Rs.50</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/maharashtrian-dishes/pav-bhaji.jpg" alt="">
+                        <p id="ItemName">Pav-Bhaji</p>
+                        <p id="ItemPrice">Rs.100</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/maharashtrian-dishes/puran poli.jpg" alt="">
+                        <p id="ItemName">Puran-Poli</p>
+                        <p id="ItemPrice">Rs.200</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/maharashtrian-dishes/vadii.jpg" alt="">
+                        <p id="ItemName">Vadii</p>
+                        <p id="ItemPrice">Rs.90</p>
+                    </div> -->
+                </div>
+
+                <div id="gujrati">
+                    <p id="CategoryName">Gujrati-dish</p>
+
+                    <!-- <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/gujarati dishesh/dhokla.jpg" alt="">
+                        <p id="ItemName">Dhokla</p>
+                        <p id="ItemPrice">Rs.170</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/gujarati dishesh/gujarati cuisine.jpg" alt="">
+                        <p id="ItemName">Gujarati-Cuisine</p>
+                        <p id="ItemPrice">Rs.200</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.5</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/gujarati dishesh/khakra.jpg" alt="">
+                        <p id="ItemName">Jalebi-phaphda</p>
+                        <p id="ItemPrice">Rs.130</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/gujarati dishesh/Dhepla.jpg" alt="">
+                        <p id="ItemName">Dhepla</p>
+                        <p id="ItemPrice">Rs.90</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/gujarati dishesh/guj5.jpg" alt="">
+                        <p id="ItemName">khakra</p>
+                        <p id="ItemPrice">Rs.110</p>
+                    </div> -->
+                </div>
+
+                <div id="southindian">
+                    <p id="CategoryName">South-Indian-dish</p>
+
+                    <!-- <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.4</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/South-Indian/dosa.jpg" alt="">
+                        <p id="ItemName">Dosa</p>
+                        <p id="ItemPrice">Rs.80</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.5</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/South-Indian/full thali.jpg" alt="">
+                        <p id="ItemName">Thali</p>
+                        <p id="ItemPrice">Rs.180</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.7</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/South-Indian/idali.jpg" alt="">
+                        <p id="ItemName">Idali</p>
+                        <p id="ItemPrice">Rs.150</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.6</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/South-Indian/medu vada.jpg" alt="">
+                        <p id="ItemName">Medu-vada</p>
+                        <p id="ItemPrice">Rs.150</p>
+                    </div>
+
+                    <div id="ItemCard">
+                        <div id="CardTop">
+                            <i class="fa fa-star" id="rating">4.5</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/South-Indian/south5.jpg" alt="">
+                        <p id="ItemName">South-kofta</p>
+                        <p id="ItemPrice">Rs.150</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <div id="cart-page" class="cart-toggle1">
+                <p id="cart-title">Cart Items</p>
+                <!-- <p id="m-total-amount">Total Amount:Rs.100</p> -->
+                <table>
+                    <thead>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Quantity</td>
+                        <td>Price</td>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- <tr>
+                            <td>
+                                <img src="images/chienees.jpg" alt="">
+                            </td>
+                            <td>Chineese</td>
+                            <td>
+                                <button class="decrease-item"> - </button>
+                                <span> 1 </span>
+                                <button class="increase-item"> + </button>
+                            </td>
+                            <td>10</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="cart">
+            <div class="taste-header">
+                <div class="user">
+                    <i class="fa fa-user-circle">
+                        Account
+                    </i>
+                </div>
+            </div>
+            <div id="category-list">
+                <p class="item-menu"></p>
+                <div class="border">
+
+                    <!-- <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                    <div class="list-card">
+                        <img src="images/brand_logo.jpg" alt="">
+                        <a href="" class="list-name">Burger</a>
+                    </div>
+
+                </div>
+
+             -->
+            </div>
+            <div id="checkout" class="cart-toggle">
+                <p id="total-item">Total Item : 0</p>
+                <p id="total-price">Total Price : Rs.0</p>
+                <p id="delivery"> Delivery Charges Rs.50</p>
+                <button class="cart-btn">CheckOut</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile view -->
+    <!-- <div id="mobile-view" class="mobile-view">
+        <div class="mobile-top">
+            <div class="logo-box"></div>
+        </div>
+    </div> -->
+
+    <!-- javascript file -->
+    <script src="./script.js"  type="module"></script>
+</body>
+</html>
